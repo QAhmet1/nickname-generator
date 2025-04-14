@@ -50,3 +50,9 @@ body {
     margin-top: 20px;
     font-weight: bold;
   }
+  #nicknameOutput {
+    font-size: 1.2em; /* Adjust font size for readability */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Append "..." for overflow */
+  }

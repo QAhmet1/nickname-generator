@@ -9,11 +9,11 @@ document.getElementById('generateBtn').addEventListener('click', function () {
   
     // Validate nickname length boundaries
     if (length > 33) {
-      alert('Warning: Nickname length cannot exceed 33 characters! The length has been adjusted to 33.');
+      alert('Warning: Nickname length cannot exceed 33 characters!');
       length = 33; // Adjust to max length
       document.getElementById('length').value = length;
     } else if (length < 3) {
-      alert('Warning: Nickname length cannot be less than 3 characters! The length has been adjusted to 3.');
+      alert('Warning: Nickname length cannot be less than 3 characters!');
       length = 3; // Adjust to min length
       document.getElementById('length').value = length;
     }

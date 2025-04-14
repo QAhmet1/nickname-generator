@@ -56,3 +56,22 @@ body {
     overflow: hidden; /* Hide overflow content */
     text-overflow: ellipsis; /* Append "..." for overflow */
   }
+  
+  
+  .option {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Vertically align text with the checkbox */
+    gap: 10px; /* Add space between the checkbox and the label text */
+    margin-bottom: 10px; /* Add space between each option */
+  }
+  
+  input[type="checkbox"] {
+    margin: 0; /* Remove any default margin to align perfectly */
+    width: 18px; /* Optional: Set a consistent size for the checkboxes */
+    height: 18px; /* Optional: Set a consistent size for the checkboxes */
+  }
+  
+  label {
+    font-size: 1rem; /* Adjust label size if needed */
+    color: #333; /* Adjust label color */
+  }

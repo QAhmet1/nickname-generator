@@ -12,22 +12,23 @@
     <label for="length">Nickname Length:</label>
     <input type="number" id="length" min="3" max="33" value="8">
 
-    <div>
-      <input type="checkbox" id="uppercase" checked>
-      <label for="uppercase">Include Uppercase Letters</label>
-    </div>
-    <div>
-      <input type="checkbox" id="lowercase" checked>
-      <label for="lowercase">Include Lowercase Letters</label>
-    </div>
-    <div>
-      <input type="checkbox" id="numbers">
-      <label for="numbers">Include Numbers</label>
-    </div>
-    <div>
-      <input type="checkbox" id="specialChars">
-      <label for="specialChars">Include Special Characters</label>
-    </div>
+    <div class="option">
+        <input type="checkbox" id="uppercase">
+        <label for="uppercase">Include Uppercase Letters</label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="lowercase">
+        <label for="lowercase">Include Lowercase Letters</label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="numbers">
+        <label for="numbers">Include Numbers</label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="specialChars">
+        <label for="specialChars">Include Special Characters</label>
+      </div>
+      
 
     <button id="generateBtn">Generate Nickname</button>
     <p id="nicknameOutput">Your nickname will appear here</p>

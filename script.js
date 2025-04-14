@@ -5,17 +5,17 @@ document.getElementById('generateBtn').addEventListener('click', function () {
     const includeNumbers = document.getElementById('numbers').checked;
     const includeSpecialChars = document.getElementById('specialChars').checked;
   
-    // Warn the user if the length is greater than 33
+    // Warn the user if the nickname length exceeds the maximum limit
     if (length > 33) {
-      alert('Warning: Nickname length cannot exceed 33 characters! Please adjust your input.');
-      length = 33; // Automatically adjust the length to the maximum allowed
+      alert('Warning: Nickname length cannot exceed 33 characters! The length has been adjusted to 33.');
+      length = 33; // Adjust length to maximum allowed value
       document.getElementById('length').value = length; // Update input field visually
     }
   
-    // Validate nickname length boundaries
+    // Warn the user if the nickname length is below the minimum limit
     if (length < 3) {
-      alert('Nickname length must be at least 3 characters!');
-      length = 3; // Automatically adjust the length to the minimum allowed
+      alert('Warning: Nickname length cannot be less than 3 characters! The length has been adjusted to 3.');
+      length = 3; // Adjust length to minimum allowed value
       document.getElementById('length').value = length; // Update input field visually
     }
   
@@ -32,6 +32,7 @@ document.getElementById('generateBtn').addEventListener('click', function () {
     if (includeNumbers) charPool += numberChars;
     if (includeSpecialChars) charPool += specialChars;
   
+    // Ensure at least one character type is selected
     if (charPool === '') {
       alert('Please select at least one character type!');
       return;
@@ -43,5 +44,6 @@ document.getElementById('generateBtn').addEventListener('click', function () {
       nickname += charPool[randomIndex];
     }
   
+    // Display the generated nickname
     document.getElementById('nicknameOutput').textContent = nickname;
   });
